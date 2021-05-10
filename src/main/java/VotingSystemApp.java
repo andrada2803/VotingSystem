@@ -23,12 +23,3 @@ public class VotingSystemApp extends Application {
 }
 
 
-    /*public static void main(String[] args) {
-        launch(args);
-
-
-        //testing purposes
-
-    }
-*/
-
