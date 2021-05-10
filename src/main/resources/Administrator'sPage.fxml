@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="870.0" prefWidth="1550.0" style="-fx-border-color: red; -fx-border-width: 2; -fx-background-color: #E5E7E9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdministratorSPage">
+   <children>
+      <Label layoutX="610.0" layoutY="55.0" text="Administrator's Page" textFill="#c70039" underline="true">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="38.0" layoutY="186.0" prefHeight="463.0" prefWidth="670.0" style="-fx-background-color: #FDEDEC; -fx-border-color: red; -fx-border-width: 2;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="52.0" prefHeight="53.0" prefWidth="212.0" text="Results" textFill="#e56161" underline="true">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="resultPresident" layoutX="201.0" layoutY="137.0" mnemonicParsing="false" onAction="#resultPres" prefHeight="54.0" prefWidth="206.0" text="Presidential Elections">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="resultEuro" layoutX="168.0" layoutY="306.0" mnemonicParsing="false" onAction="#resultEuroParl" prefHeight="72.0" prefWidth="272.0" text="European Parliamentary Elections">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="resultParliamentary" layoutX="183.0" layoutY="222.0" mnemonicParsing="false" onAction="#resultParl" prefHeight="54.0" prefWidth="243.0" text="Parliamentary Elections">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="775.0" layoutY="186.0" prefHeight="460.0" prefWidth="669.0" style="-fx-background-color: #FDEDEC; -fx-border-color: red;">
+         <children>
+            <ListView fx:id="listViewResult" layoutX="1.0" layoutY="-2.0" prefHeight="463.0" prefWidth="670.0" style="-fx-border-color: red; -fx-background-color: #FDEDEC; -fx-border-width: 2;">
+         
+      </ListView>
+         </children></Pane>
+      <Button fx:id="adminBack" layoutX="610.0" layoutY="680.0" mnemonicParsing="false" onAction="#goBackToLogIn" style="-fx-border-color: red; -fx-border-width: 2;" text="Back to LogIn Page" textFill="#f05555">
+         <font>
+            <Font name="Bell MT Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

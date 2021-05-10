@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="870.0" prefWidth="1550.0" style="-fx-background-color: #D7BDE2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Vote">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="-12.0" prefHeight="149.0" prefWidth="1354.0" text="For what type of Elections are you voting for?" underline="true">
+         <font>
+            <Font name="Bell MT Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="president" alignment="CENTER" layoutX="520.0" layoutY="146.0" mnemonicParsing="false" onAction="#presidentialElections" prefHeight="156.0" prefWidth="533.0" style="-fx-border-color: #F52B0F; -fx-border-width: 5; -fx-background-color: #FADBD8;" text="Presidential Elections">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="europarlamentary" layoutX="520.0" layoutY="571.0" mnemonicParsing="false" onAction="#euroParlamentaryElections" prefHeight="156.0" prefWidth="533.0" style="-fx-border-color: #029EE9; -fx-border-width: 5; -fx-background-color: #D6EAF8;" text="European Parliament Elections">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="parlamentary" layoutX="520.0" layoutY="357.0" mnemonicParsing="false" onAction="#parlamentaryElections" prefHeight="156.0" prefWidth="533.0" style="-fx-border-color: #FCEE1B; -fx-border-width: 5; -fx-background-color: #FCF3CF;" text="Parliamentary Elections">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="votedEuro" layoutX="519.0" layoutY="727.0" prefHeight="46.0" prefWidth="534.0" textFill="RED">
+         <font>
+            <Font name="Bell MT Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="votedPres" layoutX="520.0" layoutY="302.0" prefHeight="58.0" prefWidth="569.0" textFill="RED">
+         <font>
+            <Font name="Bell MT Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="votedParl" layoutX="520.0" layoutY="513.0" prefHeight="58.0" prefWidth="551.0" textFill="RED">
+         <font>
+            <Font name="Bell MT Italic" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
